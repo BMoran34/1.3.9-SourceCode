@@ -5,7 +5,7 @@
 #     strategy_description: a string
 #     move: A function that returns 'c' or 'b'
 ####
-import random as r
+import random
 team_name = 'Team4' # Only 10 chars displayed.
 strategy_name = 'TEAM-4'
 strategy_description = 'How does this strategy decide?'
@@ -19,7 +19,7 @@ def move(my_history, their_history, my_score, their_score):
     '''
     
     Lista = [1,2,3,4,5,6,7,8,9,10]
-    randomb = r.choice(Lista)
+    randomb = random.choice(Lista)
     if randomb == (1,2,3):
         fin = 'c'
      #   return (fin)
